@@ -6,7 +6,7 @@ on:
                               
 jobs:                        
   build:                     
-    runs-on: macos-latest    
+    runs-on: macos-13
                               
     steps:                   
     - uses: actions/checkout@v2                                           
@@ -18,7 +18,7 @@ jobs:
     - name: Build Cork App   
       run: |                 
         xcodebuild -scheme Cork -configuration Release -archivePath Cork.xcarchive archive -arch x86_64
-        xcodebuild -exportArchive -archivePath Cork.xcarchive -exportPath CorkApp -exportOptionsPlist ExportOptions.plist                            
+        xcodebuild -exportArchive -archivePath Cork.xcarchive -exportPath CorkApp -exportOptionsPlist ExportOptions.plist
                               
     - name: Upload Artifact  
       uses: actions/upload-artifact@v2                                    
