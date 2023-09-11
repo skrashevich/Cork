@@ -36,5 +36,4 @@ jobs:
         prerelease: true
         body: 'TODO: Add nightly release notes'
         files: |
-          CorkApp/Cork.app
-          
+          ./CorkApp/Cork.app
