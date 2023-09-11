@@ -25,3 +25,16 @@ jobs:
       with:                  
         name: Cork.app    
         path: CorkApp/Cork.app
+
+    - name: Update Nightly Release
+      uses: andelf/nightly-release@main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: nightly
+        name: 'Cork App Nightly Release $$'
+        prerelease: true
+        body: 'TODO: Add nightly release notes'
+        files: |
+          CorkApp/Cork.app
+          
