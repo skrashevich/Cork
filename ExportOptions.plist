@@ -4,11 +4,5 @@
 <dict>
     <key>method</key>
     <string>mac-application</string>
-    <key>teamID</key>
-    <string>6V37WARM2K</string>
-    <key>uploadSymbols</key>
-    <true/>
-    <key>uploadBitcode</key>
-    <true/>
 </dict>
 </plist>
