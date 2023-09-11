@@ -28,13 +28,17 @@ jobs:
 
   nightly-release:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: macos-13
     steps:
     - name: Download MacOS x64 Artifacts
       uses: actions/download-artifact@v3
       with:
         name: Cork.app
         path: ./
+    - name: create dmg
+      run: |
+        npm install --global create-dmg
+        create-dmg Cork.app
     - name: Update Nightly Release
       uses: andelf/nightly-release@main
       env:
@@ -45,4 +49,4 @@ jobs:
         prerelease: true
         body: 'TODO: Add nightly release notes'
         files: |
-          ./Cork.app
+          ./*.dmg
