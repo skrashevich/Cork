@@ -23,9 +23,18 @@ jobs:
     - name: Upload Artifact  
       uses: actions/upload-artifact@v3                                  
       with:                  
-        name: Cork.app    
+        name: Cork.app
         path: CorkApp/Cork.app
 
+  nightly-release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download MacOS x64 Artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: Cork.app
+        path: ./
     - name: Update Nightly Release
       uses: andelf/nightly-release@main
       env:
@@ -36,4 +45,4 @@ jobs:
         prerelease: true
         body: 'TODO: Add nightly release notes'
         files: |
-          ./CorkApp/Cork.app
+          ./Cork.app
