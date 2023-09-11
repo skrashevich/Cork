@@ -21,12 +21,20 @@ jobs:
       run: |                 
         xcodebuild -scheme Cork -configuration Release -archivePath Cork.xcarchive archive -arch x86_64
         xcodebuild -exportArchive -archivePath Cork.xcarchive -exportPath CorkApp -exportOptionsPlist ExportOptions.plist
-                              
+
+    - name: create dmg
+      run: |
+        npm install --global create-dmg
+        create-dmg CorkApp/Cork.app
+        mv *.dmg CorkApp/Cork.dmg
+                                
     - name: Upload Artifact  
       uses: actions/upload-artifact@v3                                  
       with:                  
-        name: Cork.app
-        path: CorkApp/Cork.app
+        name: Cork
+        path: |
+          CorkApp/Cork.app
+          CorkApp/Cork.dmg
 
   nightly-release:
     needs: build
@@ -35,12 +43,8 @@ jobs:
     - name: Download MacOS x64 Artifacts
       uses: actions/download-artifact@v3
       with:
-        name: Cork.app
+        name: Cork
         path: ./
-    - name: create dmg
-      run: |
-        npm install --global create-dmg
-        create-dmg Cork/Cork.app
     - name: Update Nightly Release
       uses: andelf/nightly-release@main
       env:
