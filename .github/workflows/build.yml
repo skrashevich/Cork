@@ -1,29 +1,28 @@
-name: CI                     
-                                 
-    # This workflow runs every time there's a push to your repo               
-    on:
-      push:
-      workflow_dispatch:
-                                 
-    jobs:                        
-      build:                     
-        runs-on: macos-latest    
-                                 
-        steps:                   
-        - uses: actions/checkout@v2                                           
-                                 
-        - name: Set Xcode version
-          run: sudo xcode-select --switch /Applications/Xcode_14.0.app        
-                                 
-                                 
-        - name: Build Cork App   
-          run: |                 
-            xcodebuild -scheme Cork -configuration Release -archivePath Cork.xcarchive archive         
-            xcodebuild -exportArchive -archivePath Cork.xcarchive -exportPath CorkApp -exportOptionsPlist ExportOptions.plist                            
-                                 
-        - name: Upload Artifact  
-          uses: actions/upload-artifact@v2                                    
-          with:                  
-            name: Cork           
-            path: CorkApp/Cork.app
-            
+name: CI   
+                
+on:
+  push:
+  workflow_dispatch:
+                              
+jobs:                        
+  build:                     
+    runs-on: macos-latest    
+                              
+    steps:                   
+    - uses: actions/checkout@v2                                           
+                              
+    - name: Set Xcode version
+      run: sudo xcode-select --switch /Applications/Xcode_14.0.app        
+                              
+                              
+    - name: Build Cork App   
+      run: |                 
+        xcodebuild -scheme Cork -configuration Release -archivePath Cork.xcarchive archive         
+        xcodebuild -exportArchive -archivePath Cork.xcarchive -exportPath CorkApp -exportOptionsPlist ExportOptions.plist                            
+                              
+    - name: Upload Artifact  
+      uses: actions/upload-artifact@v2                                    
+      with:                  
+        name: Cork           
+        path: CorkApp/Cork.app
+        
