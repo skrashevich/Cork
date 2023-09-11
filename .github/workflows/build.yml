@@ -38,7 +38,7 @@ jobs:
     - name: create dmg
       run: |
         npm install --global create-dmg
-        create-dmg Cork.app
+        create-dmg Cork/Cork.app
     - name: Update Nightly Release
       uses: andelf/nightly-release@main
       env:
