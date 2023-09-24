@@ -8,6 +8,12 @@
             "state" : "translated",
             "value" : ""
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
         }
       }
     },
@@ -18,6 +24,12 @@
             "state" : "translated",
             "value" : "?"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "？"
+          }
         }
       }
     },
@@ -27,6 +39,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : ""
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️"
           }
         }
       }
@@ -2429,6 +2447,12 @@
             "state" : "translated",
             "value" : "Aucune description fournie"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未提供任何信息"
+          }
         }
       }
     },
@@ -2480,6 +2504,12 @@
             "state" : "translated",
             "value" : "Impossible de charger la description"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法载入详细信息"
+          }
         }
       }
     },
@@ -2496,6 +2526,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Non optimisé pour %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未对 %@ 优化"
           }
         }
       }
@@ -2807,6 +2843,18 @@
                 "stringUnit" : {
                   "state" : "translated",
                   "value" : "%lld téléchargements"
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld 次下载"
                 }
               }
             }
@@ -3231,6 +3279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "add-tap.typing.error.error"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : ""
           }
         }
       }
@@ -3994,6 +4048,12 @@
             "state" : "translated",
             "value" : "alert.notifications-error-while-parsing-top-packages.message"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : ""
+          }
         }
       }
     },
@@ -4277,12 +4337,24 @@
             "state" : "translated",
             "value" : "Github"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub"
+          }
         }
       }
     },
     "homebrew/core" : {
       "localizations" : {
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "homebrew/core"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "homebrew/core"
@@ -4297,6 +4369,12 @@
             "state" : "translated",
             "value" : "Installation de %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安装 %@"
+          }
         }
       }
     },
@@ -4306,6 +4384,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chargement des informations..."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加载信息..."
           }
         }
       }
@@ -4317,6 +4401,12 @@
             "state" : "translated",
             "value" : "Chargement des meilleurs packages…"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加载热门软件包..."
+          }
         }
       }
     },
@@ -4326,6 +4416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fenêtre principale"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "主窗口"
           }
         }
       }
@@ -4550,6 +4646,24 @@
               }
             }
           }
+        },
+        "zh-Hans" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "已移除 %lld 个孤立包"
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "未发现孤立包"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -4588,6 +4702,7 @@
       }
     },
     "maintenance.results.package-cache.skipped-%@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -4621,223 +4736,97 @@
         }
       }
     },
-    "maintenance.results.package-cache.skipped-%@-and-%lld" : {
-      "extractionState" : "manual",
+    "maintenance.results.package-cache.skipped-%@-and-%lld-others" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%#@name@%#@count@"
-          },
-          "substitutions" : {
-            "count" : {
-              "formatSpecifier" : "lld",
-              "variations" : {
-                "plural" : {
-                  "one" : {
-                    "stringUnit" : {
-                      "state" : "translated",
-                      "value" : "Einige Zwischenspeicher wurden nicht bereinigt, weil of %1$@ und %2$lld andere nicht aktuell sind"
-                    }
-                  },
-                  "other" : {
-                    "stringUnit" : {
-                      "state" : "translated",
-                      "value" : "Einige Zwischenspeicher wurden nicht bereinigt, weil %1$@ und %2$lld andere nicht aktuell sind"
-                    }
-                  }
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Einige Zwischenspeicher wurden nicht bereinigt, weil of %@ und %lld andere nicht aktuell sind"
                 }
-              }
-            },
-            "name" : {
-              "formatSpecifier" : "d",
-              "variations" : {
-                "plural" : {
-                  "other" : {
-                    "stringUnit" : {
-                      "state" : "translated",
-                      "value" : ""
-                    }
-                  }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Einige Zwischenspeicher wurden nicht bereinigt, weil %@ und %lld andere nicht aktuell sind"
                 }
               }
             }
           }
         },
         "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%#@name@%#@count@"
-          },
-          "substitutions" : {
-            "count" : {
-              "formatSpecifier" : "lld",
-              "variations" : {
-                "plural" : {
-                  "one" : {
-                    "stringUnit" : {
-                      "state" : "translated",
-                      "value" : "Some caches weren't purged because of %1$@ and %2$lld other not being updated"
-                    }
-                  },
-                  "other" : {
-                    "stringUnit" : {
-                      "state" : "translated",
-                      "value" : "Some caches weren't purged because of %1$@ and %2$lld others not being updated"
-                    }
-                  }
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Some caches weren't purged because of %@ and %lld other package not being updated"
                 }
-              }
-            },
-            "name" : {
-              "formatSpecifier" : "d",
-              "variations" : {
-                "plural" : {
-                  "other" : {
-                    "stringUnit" : {
-                      "state" : "translated",
-                      "value" : ""
-                    }
-                  }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Some caches weren't purged because of %@ and %lld other packages not being updated"
                 }
               }
             }
           }
         },
         "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%#@name@%#@count@"
-          },
-          "substitutions" : {
-            "count" : {
-              "formatSpecifier" : "lld",
-              "variations" : {
-                "plural" : {
-                  "one" : {
-                    "stringUnit" : {
-                      "state" : "translated",
-                      "value" : "Certains caches n'ont pas été purgés en raison de %1$@ et %2$lld autre n'ayant pas été mis à jour"
-                    }
-                  },
-                  "other" : {
-                    "stringUnit" : {
-                      "state" : "translated",
-                      "value" : "Certains caches n'ont pas été purgés en raison de %1$@ et %2$lld autres n'ayant pas été mis à jour"
-                    }
-                  }
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Certains caches n'ont pas été purgés en raison de %@ et %lld autre n'ayant pas été mis à jour"
                 }
-              }
-            },
-            "name" : {
-              "formatSpecifier" : "d",
-              "variations" : {
-                "plural" : {
-                  "other" : {
-                    "stringUnit" : {
-                      "state" : "translated",
-                      "value" : ""
-                    }
-                  }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Certains caches n'ont pas été purgés en raison de %@ et %lld autres n'ayant pas été mis à jour"
                 }
               }
             }
           }
         },
         "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%#@name@%#@count@"
-          },
-          "substitutions" : {
-            "count" : {
-              "formatSpecifier" : "lld",
-              "variations" : {
-                "plural" : {
-                  "one" : {
-                    "stringUnit" : {
-                      "state" : "translated",
-                      "value" : "由于 %1$@ 和 %2$lld 未更新，某些缓存未被清除"
-                    }
-                  },
-                  "other" : {
-                    "stringUnit" : {
-                      "state" : "translated",
-                      "value" : "由于 %1$@ 和 %2$lld 未更新，某些缓存未被清除"
-                    }
-                  }
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "由于 %@ 和 %lld 未更新，某些缓存未被清除"
                 }
-              }
-            },
-            "name" : {
-              "formatSpecifier" : "d",
-              "variations" : {
-                "plural" : {
-                  "other" : {
-                    "stringUnit" : {
-                      "state" : "translated",
-                      "value" : ""
-                    }
-                  }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "由于 %@ 和 %lld 未更新，某些缓存未被清除"
                 }
               }
             }
           }
         },
         "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%#@name@%#@count@"
-          },
-          "substitutions" : {
-            "count" : {
-              "formatSpecifier" : "lld",
-              "variations" : {
-                "plural" : {
-                  "one" : {
-                    "stringUnit" : {
-                      "state" : "translated",
-                      "value" : "由於 %1$@ 和另 %2$lld 個未能更新，某些暫存無法清除。"
-                    }
-                  },
-                  "other" : {
-                    "stringUnit" : {
-                      "state" : "translated",
-                      "value" : "由於 %1$@ 和另 %2$lld 個未能更新，某些暫存無法清除。"
-                    }
-                  }
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "由於 %@ 和另 %lld 個未能更新，某些暫存無法清除。"
                 }
-              }
-            },
-            "name" : {
-              "formatSpecifier" : "d",
-              "variations" : {
-                "plural" : {
-                  "other" : {
-                    "stringUnit" : {
-                      "state" : "translated",
-                      "value" : ""
-                    }
-                  }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "由於 %@ 和另 %lld 個未能更新，某些暫存無法清除。"
                 }
               }
             }
-          }
-        }
-      }
-    },
-    "maintenance.results.package-cache.skipped-%@-and-%lld-others" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "maintenance.results.package-cache.skipped-%1$@-and-%2$lld-others"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "maintenance.results.package-cache.skipped-%1$@-and-%2$lld-others"
           }
         }
       }
@@ -5633,6 +5622,24 @@
               }
             }
           }
+        },
+        "zh-Hans" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "已安装 %lld 个软件包"
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "未安装任何软件包"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -6044,6 +6051,24 @@
                 "stringUnit" : {
                   "state" : "translated",
                   "value" : "Vous avez %lld packages obsolètes"
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "你有 %lld 个软件包有可用更新"
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "没有软件包有可用更新"
                 }
               }
             }
@@ -8721,6 +8746,12 @@
             "state" : "translated",
             "value" : "Compatibility:"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "兼容性："
+          }
         }
       }
     },
@@ -8731,6 +8762,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Check package compatibility"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "检查软件包兼容性"
           }
         }
       }
@@ -10008,6 +10045,24 @@
               }
             }
           }
+        },
+        "zh-Hans" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "你已添加 %lld 个 Tap"
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "你未添加任何 Tap"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -10321,6 +10376,24 @@
               }
             }
           }
+        },
+        "zh-Hans" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "你已安装 %lld 个 Cask"
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "你未安装任何 Cask"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -10396,6 +10469,24 @@
               }
             }
           }
+        },
+        "zh-Hans" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "你已安装 %lld 个 Formula"
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "你未安装任何 Formula"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -10422,7 +10513,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Formula 是你通过终端使用的软件包"
+            "value" : "Formula 是通过终端使用的软件包"
           }
         },
         "zh-Hant" : {
@@ -10574,6 +10665,18 @@
               }
             }
           }
+        },
+        "zh-Hans" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "更新 %lld 个软件包"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -10717,6 +10820,24 @@
               }
             }
           }
+        },
+        "zh-Hans" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld 个软件包有可用更新"
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "所有软件包已是最新"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -10791,6 +10912,12 @@
     "Tap" : {
       "localizations" : {
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tap"
@@ -11964,12 +12091,24 @@
             "state" : "translated",
             "value" : "v. %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "v. %@"
+          }
         }
       }
     },
     "􀇾" : {
       "localizations" : {
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "􀇾"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "􀇾"
