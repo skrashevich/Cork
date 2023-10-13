@@ -1,46 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "?" : {
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "?"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "?"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "?"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "？"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "?"
-          }
-        }
-      }
-    },
     "⚠️" : {
       "localizations" : {
         "cs" : {
@@ -1187,18 +1147,24 @@
             "value" : "LaunchAtLogin"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LaunchAtLogin"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "LaunchAtLogin"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "LaunchAtLogin"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LaunchAtLogin"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1221,18 +1187,24 @@
             "value" : "Balíček, díky kterému se Cork zvládne otvírat při přihlášení"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ein Paket, dass es ermöglicht Cork beim Login zu starten"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "A package that lets Cork start when you log in"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Un package qui permet à Cork de démarrer lorsque vous vous connectez"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un package qui permet à Cork de démarrer lorsque vous vous connectez"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1809,6 +1781,12 @@
             "value" : "Nikita Utkin"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nikita Utkin"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1848,6 +1826,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přeložil Cork do ruštiny"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hat Cork ins Russische übersetzt"
           }
         },
         "en" : {
@@ -2120,18 +2104,24 @@
             "value" : "Zkopírovat"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopieren"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copy"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Copier"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copier"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2154,18 +2144,24 @@
             "value" : "Zkopírovat do schránky"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In die Zwischenablage Kopieren"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copy to Clipboard"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Copier dans le presse-papiers"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copier dans le presse-papiers"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2327,18 +2323,24 @@
             "value" : "Otevřít Terminál"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminal öffnen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Open Terminal"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Ouvrir le Terminal"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir le Terminal"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2823,6 +2825,12 @@
             "value" : "Při instalaci %@ se vyskytla chyba"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ein Fehler ist bei der Installation von %@ aufgetreten"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2855,6 +2863,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zkuste balíček znovu nainstalovat nebo restartovat Cork\nPokud se to tím nevyřeší, restartujte Mac"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versuche das Paket erneut zu installieren oder Cork neu zu starten. Sollte das Problem weiterhin bestehen, versuche deinen Mac neu zu starten."
           }
         },
         "en" : {
@@ -2890,6 +2904,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Při instalaci balíčku nastala chyba"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einfehler ist während des Installationsprozesses aufgetreten"
           }
         },
         "en" : {
@@ -3067,7 +3087,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lade %@… herunter"
+            "value" : "Lade %@ herunter…"
           }
         },
         "en" : {
@@ -3190,6 +3210,46 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "完畢"
+          }
+        }
+      }
+    },
+    "add-package.install.hide-details" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skrýt podrobnosti"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Details ausblenden"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hide details"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Masquer les détails"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скрыть детали"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隐藏详细信息"
           }
         }
       }
@@ -3524,18 +3584,24 @@
             "value" : "Pro nainstalování %@ je potřeba oprávnění správce"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erweiterte Berechtigungen werden für die Installation von %@ benötigt"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Elevated permissions are required to install %@"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Des permissions élevées sont nécessaires pour installer %@"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Des permissions élevées sont nécessaires pour installer %@"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3558,18 +3624,24 @@
             "value" : "Tento balíček musíte nainstalovat přes Terminál. Použijte tento příkaz."
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dieses Paket musst du mit Hilfe des Terminals Installieren.\nBenutze dafür den unten stehenden Befehl."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "You will have to install this package through the Terminal.\nUse the command below."
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Vous devrez installer ce package via le Terminal.\nUtilisez la commande ci-dessous."
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous devrez installer ce package via le Terminal.\nUtilisez la commande ci-dessous."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3592,18 +3664,24 @@
             "value" : "Zobrazit podrobnosti"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Details anzeigen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Show details"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Afficher les détails"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher les détails"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3765,6 +3843,12 @@
             "value" : "Vývojář neposkytnul popis balíčku"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Beschreibung vorhanden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3846,6 +3930,12 @@
             "value" : "Popis balíčku use nepodařilo načíst"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beschreibung konnte nicht geladen werden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3879,6 +3969,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro %@ neoptimalizováno"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht für %@ optimiert"
           }
         },
         "en" : {
@@ -4309,6 +4405,24 @@
             }
           }
         },
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Download"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Downloads"
+                }
+              }
+            }
+          }
+        },
         "en" : {
           "variations" : {
             "plural" : {
@@ -4630,8 +4744,8 @@
         },
         "de" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Ein Fehler ist aufgetreten beim hinzufügen von %@"
+            "state" : "translated",
+            "value" : "Beim Hinzufügen von %@ ist ein Fehler aufgetreten."
           }
         },
         "en" : {
@@ -4676,7 +4790,7 @@
         },
         "de" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Versuche es später erneut"
           }
         },
@@ -4814,8 +4928,8 @@
         },
         "de" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "%@ hinzufügen..."
+            "state" : "translated",
+            "value" : "Füge %@ hinzu..."
           }
         },
         "en" : {
@@ -5044,18 +5158,24 @@
             "value" : "Klikněte na \"Otevřit Terminál\"\nPříkaz do něj vložte pomocí ⌘+V, a poté příkaz spusťte stisknutím ↩ (Return)\nŘiďte se podle pokynů, které uvidíte v Terminálu, a poté se vraťte do Corku a tento dialog zavřete"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klicke auf \"Terminal öffnen\"\nBenutze ⌘+V um den Befehl einzufügen und drücke ↩ (Enter) um den Befehl auszuführen\nFolge den Anweisungen um %@ zu Installieren. Anschließend kannst du diesen Dialog schließen."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Click \"Open Terminal\" below\nUse ⌘+V to insert the command, and then press ↩ (Return) to execute the command\nFollow the instructions to install %@, return to Cork and close this dialog"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Cliquez sur \"Ouvrir le Terminal\" ci-dessous.\nUtilisez ⌘+V pour insérer la commande, puis appuyez sur ↩ (Entrée) pour exécuter la commande.\nSuivez les instructions pour installer %@, puis revenez à Cork et fermez cette boîte de dialogue"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cliquez sur \"Ouvrir le Terminal\" ci-dessous.\nUtilisez ⌘+V pour insérer la commande, puis appuyez sur ↩ (Entrée) pour exécuter la commande.\nSuivez les instructions pour installer %@, puis revenez à Cork et fermez cette boîte de dialogue"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5170,18 +5290,24 @@
             "value" : "Cork tento balíček nenašel v databázi balíčků"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cork konnte dieses Paket nicht in der Datenbank finden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cork could not find this package in the package database"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Cork n'a pas pu trouver ce package dans la base de données des packages"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cork n'a pas pu trouver ce package dans la base de données des packages"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5204,18 +5330,24 @@
             "value" : "Balíček nebyl nalezen v databázi"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paket nicht in Datenbank gefunden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't find package in database"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Impossible de trouver le package dans la base de données"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de trouver le package dans la base de données"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6439,6 +6571,12 @@
             "value" : "GitHub"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6474,6 +6612,12 @@
     "homebrew/core" : {
       "localizations" : {
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "homebrew/core"
+          }
+        },
+        "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "homebrew/core"
@@ -6520,6 +6664,12 @@
             "value" : "Instalace %@"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Installiere %@"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6552,6 +6702,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Načítání informací…"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lade Info…"
           }
         },
         "en" : {
@@ -6588,6 +6744,12 @@
             "value" : "Načítání nejoblíbenějších balíčků…"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lade beliebte Pakete…"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6620,6 +6782,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hlavní okno"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hauptfenster"
           }
         },
         "en" : {
@@ -6917,6 +7085,30 @@
             }
           }
         },
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld verwaistes Paket gefunden"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld verwaiste Pakete gefunden"
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Keine verwaisten Pakete gefunden"
+                }
+              }
+            }
+          }
+        },
         "en" : {
           "variations" : {
             "plural" : {
@@ -7029,18 +7221,24 @@
             "value" : "Osiřelé balíčky odinstalovány"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verwaiste Pakete wurden deinstalliert"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Orphaned packages uninstalled"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Les packages orphelins ont été désinstallés"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les packages orphelins ont été désinstallés"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7063,18 +7261,24 @@
             "value" : "Osiřelé balíčky se nepodařilo odinstalovat"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konnte verwaiste Pakete nicht deinstallieren "
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't uninstall orphaned packages"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Impossible de désinstaller les packages orphelins"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de désinstaller les packages orphelins"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7097,18 +7301,24 @@
             "value" : "Chyba operace: %@"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fehler %@ aufgetreten"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Error %@ occured"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Une erreur %@ s'est produite"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une erreur %@ s'est produite"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7177,18 +7387,24 @@
             "value" : "Mezipaměť balíčků se nepodařilo vymazat"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paket-Cache konnte nicht geleert werden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't purge package cache"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Impossible de purger le cache des packages"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de purger le cache des packages"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7211,18 +7427,24 @@
             "value" : "Chyba operace: %@"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fehler %@ aufgetreten"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Error %@ occured"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Une erreur %@ s'est produite"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une erreur %@ s'est produite"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8094,18 +8316,24 @@
             "value" : "V: %1$lld | S: %2$lld | P: %3$lld"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F: %1$lld | C: %2$lld | T:%3$lld"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "F: %1$lld | C: %2$lld | T:%3$lld"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "F: %1$lld | C: %2$lld | T:%3$lld"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F: %1$lld | C: %2$lld | T:%3$lld"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8524,6 +8752,24 @@
             }
           }
         },
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Ein Paket installiert"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Pakete installiert"
+                }
+              }
+            }
+          }
+        },
         "en" : {
           "variations" : {
             "plural" : {
@@ -8710,18 +8956,24 @@
             "value" : "Mezipaměť stažených balíčků je prázdná"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine zwischengespeicherten Downloads vorhanden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "No cached downloads to delete"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Pas de téléchargements mis en cache à supprimer"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pas de téléchargements mis en cache à supprimer"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9178,6 +9430,24 @@
                 "stringUnit" : {
                   "state" : "translated",
                   "value" : "Nalezeno %lld zastaralých balíčků"
+                }
+              }
+            }
+          }
+        },
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Du hast ein veraltetes Paket"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Du hast %lld veraltete Pakete"
                 }
               }
             }
@@ -12035,18 +12305,24 @@
             "value" : "Spuštění při přihlášení:"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisches Starten:"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Automatic startup:"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Démarrage automatique :"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Démarrage automatique :"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12070,18 +12346,24 @@
             "value" : "Otevřít při přihlášení"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beim Login starten"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Open at login"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Ouvrir au démarrage"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir au démarrage"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12888,6 +13170,12 @@
             "value" : "Kompatibilita:"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kompatibilität:"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12921,6 +13209,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontrolovat, zda jsou balíčky kompatibilní"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paket Kompatibilität Prüfen"
           }
         },
         "en" : {
@@ -13423,18 +13717,24 @@
             "value" : "Zobrazit výstupy příkazů v reálném čase"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Echtzeit Ausgabe anzeigen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Show real-time outputs of operations"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Afficher les sorties en temps réel des opérations"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher les sorties en temps réel des opérations"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13457,18 +13757,24 @@
             "value" : "Vždy zobrazit výstupy v reálném čase"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Echtzeit-Ausgabe automatisch einblenden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Show real-time outputs by default"
           }
         },
-		"fr" : {
-			"stringUnit" : {
-			  "state" : "translated",
-			  "value" : "Afficher les sorties en temps réel par défaut"
-			}
-		  },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher les sorties en temps réel par défaut"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14717,6 +15023,24 @@
             }
           }
         },
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Du hast einen Tap hinzugefügt"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Du hast %lld Taps hinzugefügt"
+                }
+              }
+            }
+          }
+        },
         "en" : {
           "variations" : {
             "plural" : {
@@ -15044,7 +15368,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Du hast %@ an zwischengespeicherten Downloads"
+            "value" : "Du hast %@ zwischengespeicherten Downloads"
           }
         },
         "en" : {
@@ -15199,6 +15523,24 @@
                 "stringUnit" : {
                   "state" : "translated",
                   "value" : "Máte nainstalovaných %lld soudků"
+                }
+              }
+            }
+          }
+        },
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Du hast ein Cask installiert"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Du hast %lld Casks installiert"
                 }
               }
             }
@@ -15364,6 +15706,24 @@
                 "stringUnit" : {
                   "state" : "translated",
                   "value" : "Máte nainstalovaných %lld vzorců"
+                }
+              }
+            }
+          }
+        },
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Du hast eine Formula installiert"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Du hast %lld Formulae installiert"
                 }
               }
             }
@@ -15673,6 +16033,24 @@
             }
           }
         },
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Ein Paket aktualisieren"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : " %lld Pakete aktualisieren"
+                }
+              }
+            }
+          }
+        },
         "en" : {
           "variations" : {
             "plural" : {
@@ -15924,6 +16302,24 @@
             }
           }
         },
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Es gibt ein veraltetes Paket"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Es gibt %lld veraltete Pakete"
+                }
+              }
+            }
+          }
+        },
         "en" : {
           "variations" : {
             "plural" : {
@@ -16108,6 +16504,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pípa"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap"
           }
         },
         "en" : {
@@ -17717,6 +18119,12 @@
             "value" : "v. %@"
           }
         },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "v. %@"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17752,6 +18160,12 @@
     "􀇾" : {
       "localizations" : {
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "􀇾"
+          }
+        },
+        "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "􀇾"
