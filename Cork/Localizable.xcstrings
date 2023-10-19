@@ -3078,6 +3078,12 @@
     },
     "add-package.install.another-homebrew-process-blocking-install.description" : {
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Můžete počkat dokud tento proces neskončí, nebo ho můžete vynuceně zastavit.\nZastavením můžete rozbít Homebrew."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3088,6 +3094,12 @@
     },
     "add-package.install.another-homebrew-process-blocking-install.title" : {
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jiný Homebrew proces už běží"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
