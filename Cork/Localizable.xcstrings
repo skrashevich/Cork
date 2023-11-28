@@ -2206,35 +2206,6 @@
         }
       }
     },
-    "action.copy-manual-uninstall-command-to-clipboard" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zkopírovat do schránky"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "In Zwischenablage kopieren"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copy to Clipboard"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Скопировать в буфер обмена"
-          }
-        }
-      }
-    },
     "action.done" : {
       "localizations" : {
         "cs" : {
@@ -4844,6 +4815,12 @@
             "value" : "Elevated permissions are required to uninstall %@"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Des autorisations élevées sont requises pour désinstaller %@"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4876,6 +4853,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "You will have to uninstall this package through the Terminal.\nUse the command below."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous devrez désinstaller ce package via le Terminal.\nUtilisez la commande ci-dessous."
           }
         },
         "ru" : {
@@ -5605,6 +5588,12 @@
             "value" : "Click \"Open Terminal\" below\nUse ⌘+V to insert the command, and then press ↩ (Return) to execute the command\nFollow the instructions to uninstall %@, return to Cork and close this dialog"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cliquez sur \"Ouvrir le terminal\" ci-dessous\nUtilisez ⌘+V pour insérer la commande, puis appuyez sur ↩ (Retour) pour exécuter la commande\nSuivez les instructions pour désinstaller %@, retournez à Cork et fermez cette boîte de dialogue"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6053,6 +6042,12 @@
             "value" : "Couldn't write Homebrew backup"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible d'écrire une sauvegarde Homebrew"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6063,53 +6058,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "无法写入 Homebrew 备份"
-          }
-        }
-      }
-    },
-    "alert.could-not-find-package-in-parent-directory.message" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tento balíček nejspíš není nainstalovaný"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dieses Paket scheint nicht installiert zu sein"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This package doesn't seem to be installed"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Il semble que ce paquet ne soit pas installé"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Похоже, этот пакет не установлен"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "该软件包似乎没有被安装"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "此套件似乎並未安裝"
           }
         }
       }
@@ -6180,6 +6128,12 @@
             "value" : "Move the backup file to a different location, then try again"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Déplacez le fichier de sauvegarde vers un autre emplacement, puis réessayez"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6214,6 +6168,12 @@
             "value" : "Insufficient permissions to read backup file"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autorisations insuffisantes pour lire le fichier de sauvegarde"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6246,6 +6206,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't create backup parent folder"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de créer le dossier parent de sauvegarde"
           }
         },
         "ru" : {
@@ -6376,6 +6342,12 @@
             "value" : "Move the backup file to a different location, then try again"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Déplacez le fichier de sauvegarde vers un autre emplacement, puis réessayez"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6410,6 +6382,12 @@
             "value" : "Couldn't read backup file"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de lire le fichier de sauvegarde"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6420,29 +6398,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "无法读取备份文件"
-          }
-        }
-      }
-    },
-    "alert.could-not-read-brewfile.message" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Versuche es erneut, oder starte Cork neu"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Try again, or restart Cork"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Попробуйте еще раз, либо перезапустите Cork"
           }
         }
       }
@@ -6465,6 +6420,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't read backup"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de lire la sauvegarde"
           }
         },
         "ru" : {
@@ -6499,6 +6460,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "A fatal error occurred during package installation"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une erreur fatale s'est produite lors de l'installation du package"
           }
         },
         "ru" : {
@@ -6674,6 +6641,12 @@
             "value" : "The file you tried to restore from doesn't have the correct structure"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le fichier à partir duquel vous avez essayé de restaurer n'a pas la bonne structure"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6706,6 +6679,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Backup File Broken"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fichier de sauvegarde cassé"
           }
         },
         "ru" : {
@@ -7480,6 +7459,12 @@
             "value" : "%@ Homebrew Backup"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Sauvegarde homebrew"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7512,6 +7497,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Backing up Homebrew…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sauvegarde de Homebrew…"
           }
         },
         "ru" : {
@@ -7548,6 +7539,12 @@
             "value" : "There were no errors"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il n'y a eu aucune erreur"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7580,6 +7577,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Successfully restored from backup"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restauré avec succès à partir de la sauvegarde"
           }
         },
         "ru" : {
@@ -7616,6 +7619,12 @@
             "value" : "Restoring from backup…"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restauration à partir d'une sauvegarde…"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7648,6 +7657,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hang tight! This might take a few minutes"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patiente un instant! Ceci pourrait prendre quelques minutes"
           }
         },
         "ru" : {
@@ -7722,6 +7737,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hallo, Welt!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello, World!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello, World!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Здравствуй, мир!"
           }
         },
         "zh-Hans" : {
@@ -9616,6 +9649,12 @@
             "value" : "Try again, or restart Cork"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réessayez ou redémarrez Cork"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10123,6 +10162,12 @@
             "value" : "Export Homebrew Backup…"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exporter la sauvegarde Homebrew…"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10155,6 +10200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restore from Backup…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restore depuis une sauvergarde…"
           }
         },
         "ru" : {
@@ -12044,6 +12095,12 @@
             "value" : "Show all packages"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher tous les packages"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12076,6 +12133,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Show manually installed packages"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher les packages installés manuellement"
           }
         },
         "ru" : {
@@ -14261,29 +14324,6 @@
         }
       }
     },
-    "settings.advanced" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Erweitert"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Advanced"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Дополнительно"
-          }
-        }
-      }
-    },
     "settings.brew.analytics" : {
       "comment" : "MARK: - Settings: Brew",
       "localizations" : {
@@ -15043,6 +15083,12 @@
             "value" : "Package filtering:"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtrage des packages:"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15077,6 +15123,12 @@
             "value" : "Show all packages, including dependencies"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher tous les packages, y compris les dépendances"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15109,6 +15161,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Show only manually installed packages"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher uniquement les packages installés manuellement"
           }
         },
         "ru" : {
@@ -15282,6 +15340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Open Cork without its main window"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir Cork sans sa fenêtre principale"
           }
         },
         "ru" : {
@@ -15893,53 +15957,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "安裝日期"
-          }
-        }
-      }
-    },
-    "settings.general.sort-packages.none" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Neřadit"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unsortiert"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Do Not Sort"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ne Pas Trier"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Не сортировать"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "不排序"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "勿排序"
           }
         }
       }
