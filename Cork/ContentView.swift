@@ -22,7 +22,7 @@ struct ContentView: View, Sendable
     @AppStorage("displayOnlyIntentionallyInstalledPackagesByDefault") var displayOnlyIntentionallyInstalledPackagesByDefault: Bool = true
 
     @AppStorage("customHomebrewPath") var customHomebrewPath: String = ""
-    
+
     @Environment(\.openWindow) var openWindow
 
     @EnvironmentObject var appState: AppState
@@ -36,6 +36,70 @@ struct ContentView: View, Sendable
 
     @State private var multiSelection = Set<UUID>()
     @State private var columnVisibility: NavigationSplitViewVisibility = .doubleColumn
+
+    @State private var corruptedPackage: CorruptedPackage?
+
+    // MARK: - ViewBuilders
+    @ViewBuilder private var upgradePackagesButton: some View
+    {
+        Button
+        {
+            appState.isShowingUpdateSheet = true
+        } label: {
+            Label
+            {
+                Text("navigation.upgrade-packages")
+            } icon: {
+                Image(systemName: "arrow.clockwise")
+            }
+        }
+        .help("navigation.upgrade-packages.help")
+        .disabled(appState.isCheckingForPackageUpdates)
+    }
+    
+    @ViewBuilder private var addTapButton: some View
+    {
+        Button
+        {
+            appState.isShowingAddTapSheet.toggle()
+        } label: {
+            Label
+            {
+                Text("navigation.add-tap")
+            } icon: {
+                Image(systemName: "spigot")
+            }
+        }
+        .help("navigation.add-tap.help")
+    }
+    
+    @ViewBuilder private var installPackageButton: some View
+    {
+        Button
+        {
+            appState.isShowingInstallationSheet.toggle()
+        } label: {
+            Label
+            {
+                Text("navigation.install-package")
+            } icon: {
+                Image(systemName: "plus")
+            }
+        }
+        .help("navigation.install-package.help")
+    }
+    
+    @ViewBuilder private var manageServicesButton: some View
+    {
+        Button
+        {
+            openWindow(id: .servicesWindowID)
+        } label: {
+            Label("navigation.manage-services", systemImage: "square.stack.3d.down.right")
+        }
+    }
+    
+    // MARK: - The main view
 
     var body: some View
     {
@@ -54,70 +118,31 @@ struct ContentView: View, Sendable
             {
                 ToolbarItem(id: "upgradePackages", placement: .primaryAction)
                 {
-                    Button
-                    {
-                        appState.isShowingUpdateSheet = true
-                    } label: {
-                        Label
-                        {
-                            Text("navigation.upgrade-packages")
-                        } icon: {
-                            Image(systemName: "arrow.clockwise")
-                        }
-                    }
-                    .help("navigation.upgrade-packages.help")
-                    .disabled(appState.isCheckingForPackageUpdates)
+                    upgradePackagesButton
                 }
 
                 ToolbarItem(id: "addTap", placement: .primaryAction)
                 {
-                    Button
-                    {
-                        appState.isShowingAddTapSheet.toggle()
-                    } label: {
-                        Label
-                        {
-                            Text("navigation.add-tap")
-                        } icon: {
-                            Image(systemName: "spigot")
-                        }
-                    }
-                    .help("navigation.add-tap.help")
+                    addTapButton
                 }
 
                 ToolbarItem(id: "installPackage", placement: .primaryAction)
                 {
-                    Button
-                    {
-                        appState.isShowingInstallationSheet.toggle()
-                    } label: {
-                        Label
-                        {
-                            Text("navigation.install-package")
-                        } icon: {
-                            Image(systemName: "plus")
-                        }
-                    }
-                    .help("navigation.install-package.help")
+                    installPackageButton
                 }
-                
+
                 ToolbarItem(id: "manageServices", placement: .primaryAction)
                 {
-                    Button
-                    {
-                        openWindow(id: .servicesWindowID)
-                    } label: {
-                        Label("navigation.manage-services", systemImage: "square.stack.3d.down.right")
-                    }
+                    manageServicesButton
                 }
                 .defaultCustomization(.hidden)
-                
+
                 ToolbarItem(id: "spacer", placement: .primaryAction)
                 {
                     Spacer()
                 }
                 .defaultCustomization(.hidden)
-                
+
                 ToolbarItem(id: "divider", placement: .primaryAction)
                 {
                     Divider()
@@ -151,8 +176,7 @@ struct ContentView: View, Sendable
 
             if !customHomebrewPath.isEmpty && !FileManager.default.fileExists(atPath: AppConstants.brewExecutablePath.path)
             {
-                appState.fatalAlertType = .customBrewExcutableGotDeleted
-                appState.isShowingFatalError = true
+                appState.showAlert(errorToShow: .customBrewExcutableGotDeleted)
             }
 
             AppConstants.logger.debug("Documents directory: \(AppConstants.documentsDirectoryPath.path, privacy: .public)")
@@ -212,15 +236,13 @@ struct ContentView: View, Sendable
                 catch let taggedStateApplicationError as NSError
                 {
                     AppConstants.logger.error("Error while applying tagged state to packages: \(taggedStateApplicationError, privacy: .public)")
-                    appState.fatalAlertType = .couldNotApplyTaggedStateToPackages
-                    appState.isShowingFatalError = true
+                    appState.showAlert(errorToShow: .couldNotApplyTaggedStateToPackages)
                 }
             }
             catch let uuidLoadingError as NSError
             {
                 AppConstants.logger.error("Failed while loading UUIDs from file: \(uuidLoadingError, privacy: .public)")
-                appState.fatalAlertType = .couldNotApplyTaggedStateToPackages
-                appState.isShowingFatalError = true
+                appState.showAlert(errorToShow: .couldNotApplyTaggedStateToPackages)
             }
         }
         .task(priority: .background)
@@ -312,13 +334,14 @@ struct ContentView: View, Sendable
         {
             AddFormulaView(isShowingSheet: $appState.isShowingInstallationSheet, packageInstallationProcessStep: .ready)
         }
-        .sheet(isPresented: $appState.isShowingPackageReinstallationSheet)
-        {
-            ReinstallCorruptedPackageView(corruptedPackageToReinstall: appState.corruptedPackage)
-        }
+        .sheet(item: $corruptedPackage, onDismiss: {
+            corruptedPackage = nil
+        }, content: { corruptedPackageInternal in
+            ReinstallCorruptedPackageView(corruptedPackageToReinstall: corruptedPackageInternal)
+        })
         .sheet(isPresented: $appState.isShowingSudoRequiredForUninstallSheet)
         {
-            SudoRequiredForRemovalSheet(isShowingSheet: $appState.isShowingSudoRequiredForUninstallSheet)
+            SudoRequiredForRemovalSheet()
         }
         .sheet(isPresented: $appState.isShowingAddTapSheet)
         {
@@ -348,7 +371,7 @@ struct ContentView: View, Sendable
                     title: Text("alert.unable-to-uninstall-dependency.title"),
                     message: Text("alert.unable-to-uninstall-dependency.message-\(appState.offendingDependencyProhibitingUninstallation)"),
                     dismissButton: .default(Text("action.close"), action: {
-                        appState.isShowingFatalError = false
+                        appState.dismissAlert()
                     })
                 )
 
@@ -423,12 +446,12 @@ struct ContentView: View, Sendable
                         restartApp()
                     })
                 )
-            case .installedPackageHasNoVersions:
+            case let .installedPackageHasNoVersions(corruptedPackageName):
                 return Alert(
-                    title: Text("alert.package-corrupted.title-\(appState.corruptedPackage)"),
+                    title: Text("alert.package-corrupted.title-\(corruptedPackageName)"),
                     message: Text("alert.package-corrupted.message"),
-                    dismissButton: .default(Text("action.repair-\(appState.corruptedPackage)"), action: {
-                        appState.isShowingPackageReinstallationSheet = true
+                    dismissButton: .default(Text("action.repair-\(corruptedPackageName)"), action: {
+                        self.corruptedPackage = .init(name: corruptedPackageName)
                     })
                 )
             case .homePathNotSet:
@@ -444,7 +467,7 @@ struct ContentView: View, Sendable
                     title: Text("alert.notifications-error-while-obtaining-permissions.title"),
                     message: Text("alert.notifications-error-while-obtaining-permissions.message"),
                     dismissButton: .cancel(Text("action.use-without-notifications"), action: {
-                        appState.isShowingFatalError = false
+                        appState.dismissAlert()
                     })
                 )
             case .couldNotParseTopPackages:
@@ -452,7 +475,7 @@ struct ContentView: View, Sendable
                     title: Text("alert.notifications-error-while-parsing-top-packages.title"),
                     message: Text("alert.notifications-error-while-parsing-top-packages.message"),
                     dismissButton: .cancel(Text("action.close"), action: {
-                        appState.isShowingFatalError = false
+                        appState.dismissAlert()
                     })
                 )
             case .receivedInvalidResponseFromBrew:
@@ -460,7 +483,7 @@ struct ContentView: View, Sendable
                     title: Text("alert.notifications-error-while-getting-top-packages.title"),
                     message: Text("alert.notifications-error-while-getting-top-package.message"),
                     dismissButton: .cancel(Text("action.close"), action: {
-                        appState.isShowingFatalError = false
+                        appState.dismissAlert()
                         enableDiscoverability = false
                     })
                 )
@@ -489,7 +512,7 @@ struct ContentView: View, Sendable
                     title: Text("alert.could-not-associate-any-package-in-tracker-with-provided-uuid.title"),
                     message: Text("alert.could-not-associate-any-package-in-tracker-with-provided-uuid.message"),
                     dismissButton: .default(Text("action.close"), action: {
-                        appState.isShowingFatalError = false
+                        appState.dismissAlert()
                     })
                 )
 
@@ -498,7 +521,7 @@ struct ContentView: View, Sendable
                     title: Text("alert.could-not-find-package-in-parent-directory.title"),
                     message: Text("message.try-again-or-restart"),
                     dismissButton: .default(Text("action.close"), action: {
-                        appState.isShowingFatalError = false
+                        appState.dismissAlert()
                     })
                 )
 
@@ -507,7 +530,7 @@ struct ContentView: View, Sendable
                     title: Text("alert.could-not-get-brewfile-working-directory.title"),
                     message: Text("message.try-again-or-restart"),
                     dismissButton: .default(Text("action.close"), action: {
-                        appState.isShowingFatalError = false
+                        appState.dismissAlert()
                     })
                 )
             case .couldNotDumpBrewfile:
@@ -515,7 +538,7 @@ struct ContentView: View, Sendable
                     title: Text("alert.could-not-dump-brewfile.title"),
                     message: Text("message.try-again-or-restart"),
                     dismissButton: .default(Text("action.close"), action: {
-                        appState.isShowingFatalError = false
+                        appState.dismissAlert()
                     })
                 )
 
@@ -524,7 +547,7 @@ struct ContentView: View, Sendable
                     title: Text("alert.could-not-read-brewfile.title"),
                     message: Text("message.try-again-or-restart"),
                     dismissButton: .default(Text("action.close"), action: {
-                        appState.isShowingFatalError = false
+                        appState.dismissAlert()
                     })
                 )
             case .couldNotGetBrewfileLocation:
@@ -532,7 +555,7 @@ struct ContentView: View, Sendable
                     title: Text("alert.could-not-get-brewfile-location.title"),
                     message: Text("alert.could-not-get-brewfile-location.message"),
                     dismissButton: .default(Text("action.close"), action: {
-                        appState.isShowingFatalError = false
+                        appState.dismissAlert()
                     })
                 )
             case .couldNotImportBrewfile:
@@ -540,7 +563,7 @@ struct ContentView: View, Sendable
                     title: Text("alert.could-not-import-brewfile.title"),
                     message: Text("alert.could-not-import-brewfile.message"),
                     dismissButton: .default(Text("action.close"), action: {
-                        appState.isShowingFatalError = false
+                        appState.dismissAlert()
                     })
                 )
             case .malformedBrewfile:
@@ -548,15 +571,15 @@ struct ContentView: View, Sendable
                     title: Text("alert.malformed-brewfile.title"),
                     message: Text("alert.malformed-brewfile.message"),
                     dismissButton: .default(Text("action.close"), action: {
-                        appState.isShowingFatalError = false
+                        appState.dismissAlert()
                     })
                 )
-            case .fatalPackageInstallationError:
+            case let .fatalPackageInstallationError(errorDetails):
                 return Alert(
                     title: Text("alert.fatal-installation.error"),
-                    message: Text(appState.fatalAlertDetails),
+                    message: Text(errorDetails),
                     dismissButton: .default(Text("action.close"), action: {
-                        appState.isShowingFatalError = false
+                        appState.dismissAlert()
                     })
                 )
             case .customBrewExcutableGotDeleted:
@@ -609,8 +632,7 @@ struct ContentView: View, Sendable
 
             if topPackageLoadingError is DataDownloadingError
             {
-                appState.fatalAlertType = .receivedInvalidResponseFromBrew
-                appState.isShowingFatalError = true
+                appState.showAlert(errorToShow: .receivedInvalidResponseFromBrew)
             }
         }
     }

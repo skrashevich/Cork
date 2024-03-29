@@ -72,7 +72,7 @@ struct InstallationInitialView: View
 
             HStack
             {
-                DismissSheetButton(isShowingSheet: $isShowingSheet)
+                DismissSheetButton()
 
                 Spacer()
 
@@ -115,8 +115,7 @@ struct InstallationInitialView: View
                             
                             dismiss()
                             
-                            appState.fatalAlertType = .topPackageArrayFilterCouldNotRetrieveAnyPackages
-                            appState.isShowingFatalError = true
+                            appState.showAlert(errorToShow: .topPackageArrayFilterCouldNotRetrieveAnyPackages)
                             
                         }
                         

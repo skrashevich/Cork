@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct SudoRequiredForRemovalSheet: View 
+struct SudoRequiredForRemovalSheet: View, Sendable 
 {
+    @Environment(\.dismiss) var dismiss
+    
     @EnvironmentObject var brewData: BrewDataStorage
     @EnvironmentObject var appState: AppState
-    
-    @Binding var isShowingSheet: Bool
     
     var body: some View
     {
@@ -40,7 +40,7 @@ struct SudoRequiredForRemovalSheet: View
                 {
                     Button
                     {
-                        isShowingSheet = false
+                        dismiss()
                         
                         Task.detached
                         {
