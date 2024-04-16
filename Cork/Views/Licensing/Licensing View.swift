@@ -29,26 +29,7 @@ struct LicensingView: View
         }
         .onAppear
         {
-            AppConstants.logger.debug("Has validated email? \(hasValidatedEmail ? "YES" : "NO")")
-            
-            if hasValidatedEmail
-            {
-                appState.licensingState = .bought
-            }
-            else
-            {
-                if let demoActivatedAt
-                {
-                    if ((demoActivatedAt.timeIntervalSinceNow) + AppConstants.demoLengthInSeconds) > 0
-                    { // Check if there is still time on the demo
-                        appState.licensingState = .demo
-                    }
-                    else
-                    {
-                        appState.licensingState = .notBoughtOrHasNotActivatedDemo
-                    }
-                }
-            }
+            appState.licensingState = .bought
         }
     }
 }

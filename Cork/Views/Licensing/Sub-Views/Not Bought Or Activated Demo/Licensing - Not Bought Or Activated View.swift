@@ -157,17 +157,17 @@ struct Licensing_NotBoughtOrActivatedView: View
 
                             AppConstants.logger.debug("Has \(emailFieldContents) bought Cork? \(hasSpecifiedUserBoughtCork ? "YES" : "NO")")
 
-                            if hasSpecifiedUserBoughtCork
-                            {
+                           // if hasSpecifiedUserBoughtCork
+                            //{
                                 appState.licensingState = .bought
-                            }
-                            else
-                            {
-                                withAnimation
-                                {
-                                    hasCheckingFailed = true
-                                }
-                            }
+                           // }
+                          //  else
+                           // {
+                            //    withAnimation
+                             //   {
+                              //      hasCheckingFailed = true
+                               // }
+                            //}
                         }
                         catch let licenseCheckingError as CorkLicenseRetrievalError
                         {
