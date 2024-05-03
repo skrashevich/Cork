@@ -79,6 +79,12 @@
             "state" : "translated",
             "value" : "정보"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "О программе"
+          }
         }
       }
     },
@@ -3512,6 +3518,12 @@
             "state" : "translated",
             "value" : " %@ 을 삭제 하시겠습니까?"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы действительно хотите очистить %@?"
+          }
         }
       }
     },
@@ -4226,6 +4238,12 @@
             "state" : "translated",
             "value" : "%@ 를 제거 하시겠습니까??"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы действительно хотите удалить %@?"
+          }
         }
       }
     },
@@ -4312,6 +4330,12 @@
             "state" : "translated",
             "value" : "이 작업은 되돌릴 수 없습니다."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это действие нельзя отменить"
+          }
         }
       }
     },
@@ -4397,6 +4421,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "상위 패키지 로딩 시간 초과"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Произошла ошибка при загрузке основных пакетов — истекло время ожидания"
           }
         }
       }
@@ -5704,6 +5734,12 @@
             "state" : "translated",
             "value" : "%1$@ 은(는) %2$@ 칩을 지원하지 않습니다."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ doesn't support %2$@ chips"
+          }
         }
       }
     },
@@ -5731,6 +5767,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "이 패키지는 해당 칩을 지원하지 않습니다."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This package doesn't support your chip"
           }
         }
       }
@@ -9128,6 +9170,12 @@
             "state" : "translated",
             "value" : "Package %@ prevented loading"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пакет %@ предотвратил загрузку."
+          }
         }
       }
     },
@@ -9196,6 +9244,12 @@
             "state" : "translated",
             "value" : "Could not load packages (%@)"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could not load packages (%@)"
+          }
         }
       }
     },
@@ -9229,6 +9283,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "패키지를 동기화할 수 없습니다."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could not synchronize packages"
           }
         },
         "zh-Hans" : {
@@ -10326,6 +10386,12 @@
             "state" : "translated",
             "value" : "Restart Cork, and if the problem persists, reinstall it"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restart Cork, and if the problem persists, reinstall it"
+          }
         }
       }
     },
@@ -10470,6 +10536,12 @@
             "state" : "translated",
             "value" : "%@을(를) 제거할 수 없습니다."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't Uninstall %@"
+          }
         }
       }
     },
@@ -10497,6 +10569,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%2$@는 %1$@의 종속성입니다."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%2$@ is a dependency of %1$@"
           }
         }
       }
@@ -20958,6 +21036,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld 서비스를 찾았습니다."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld services found"
           }
         }
       }
