@@ -24,7 +24,16 @@ struct PackageAndTapOverviewBox: View
                 mainText: "start-page.installed-formulae.description",
                 animateNumberChanges: true
             )
-
+            .contextMenu
+            {
+                Button
+                {
+                    AppConstants.brewCellarPath.revealInFinder(.openTargetItself)
+                } label: {
+                    Text("action.reveal-in-finder")
+                }
+            }
+            
             Divider()
 
             GroupBoxHeadlineGroup(
@@ -33,6 +42,15 @@ struct PackageAndTapOverviewBox: View
                 mainText: "start-page.installed-casks.description",
                 animateNumberChanges: true
             )
+            .contextMenu
+            {
+                Button
+                {
+                    AppConstants.brewCaskPath.revealInFinder(.openTargetItself)
+                } label: {
+                    Text("action.reveal-in-finder")
+                }
+            }
 
             Divider()
 
@@ -42,6 +60,15 @@ struct PackageAndTapOverviewBox: View
                 mainText: "start-page.added-taps.description",
                 animateNumberChanges: true
             )
+            .contextMenu
+            {
+                Button
+                {
+                    AppConstants.tapPath.revealInFinder(.openTargetItself)
+                } label: {
+                    Text("action.reveal-in-finder")
+                }
+            }
         }
     }
 }
