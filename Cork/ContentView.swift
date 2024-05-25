@@ -286,6 +286,7 @@ struct ContentView: View, Sendable
             {
                 AppConstants.logger.info("Will calculate cached downloads")
                 await appState.loadCachedDownloadedPackages()
+                appState.assignPackageTypeToCachedDownloads(brewData: brewData)
             }
         }
         .onChange(of: appState.cachedDownloadsFolderSize)
@@ -295,6 +296,7 @@ struct ContentView: View, Sendable
                 AppConstants.logger.info("Will recalculate cached downloads")
                 appState.cachedDownloads = .init()
                 await appState.loadCachedDownloadedPackages()
+                appState.assignPackageTypeToCachedDownloads(brewData: brewData)
             }
         }
         .onChange(of: areNotificationsEnabled, perform: { newValue in
@@ -539,10 +541,10 @@ struct ContentView: View, Sendable
                         appState.dismissAlert()
                     })
                 )
-            case .couldNotDumpBrewfile:
+            case .couldNotDumpBrewfile(let error):
                 return Alert(
                     title: Text("alert.could-not-dump-brewfile.title"),
-                    message: Text("message.try-again-or-restart"),
+                    message: Text("message.try-again-or-restart-\(error)"),
                     dismissButton: .default(Text("action.close"), action: {
                         appState.dismissAlert()
                     })
